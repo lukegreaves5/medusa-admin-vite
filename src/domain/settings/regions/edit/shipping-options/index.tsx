@@ -22,7 +22,7 @@ const ShippingOptions = ({ region }: Props) => {
   return (
     <>
       <Section
-        title={t("shipping-options-shipping-options", "Shipping Options")}
+        title={t("shipping-options-shipping-options", "Delivery Options")}
         actions={[
           {
             label: t("shipping-options-add-option", "Add Option"),

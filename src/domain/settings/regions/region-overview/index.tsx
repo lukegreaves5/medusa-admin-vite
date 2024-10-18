@@ -59,12 +59,13 @@ const RegionOverview = ({ id }: Props) => {
         title={t("region-overview-regions", "Regions")}
         customActions={
           <div>
-            <Button
-              variant="ghost"
-              size="small"
-              className="h-xlarge w-xlarge"
-              onClick={toggle}
-            >
+              <Button
+                disabled={true}
+                variant="ghost"
+                size="small"
+                className="h-xlarge w-xlarge"
+                onClick={toggle}
+              >
               <PlusIcon />
             </Button>
           </div>

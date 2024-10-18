@@ -20,6 +20,7 @@ const ReturnShippingOptions = ({ region }: Props) => {
   const { state, toggle, close } = useToggleState()
 
   return (
+    /*
     <>
       <Section
         title={t(
@@ -53,6 +54,8 @@ const ReturnShippingOptions = ({ region }: Props) => {
         region={region}
       />
     </>
+    */
+   null
   )
 }
 

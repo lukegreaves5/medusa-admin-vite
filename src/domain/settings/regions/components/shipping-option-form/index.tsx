@@ -78,6 +78,29 @@ const ShippingOptionForm = ({ form, region, isEdit = false }: Props) => {
       </div>
       <div className="bg-grey-20 my-xlarge h-px w-full" />
       <div>
+        <div className="gap-y-2xsmall flex flex-col">
+          <div className="flex items-center justify-between">
+            <h3 className="inter-base-semibold mb-2xsmall">
+              {t("shipping-option-form-visible-in-store", "Enabled for Pickup")}
+            </h3>
+            <Controller
+              control={control}
+              name={"store_option"}
+              render={({ field: { value, onChange } }) => {
+                return <Switch checked={value} onCheckedChange={onChange} />
+              }}
+            />
+          </div>
+          <p className="inter-base-regular text-grey-50">
+            {t(
+              "shipping-option-form-enable-or-disable-the-shipping-option-visiblity-in-store",
+              "When enabled, and when there is the only one shipping option, the shipping details section of the checkout will be removed from the checkout flow."
+            )}
+          </p>
+        </div>
+      </div>
+      <div className="bg-grey-20 my-xlarge h-px w-full" />
+      <div>
         <h3 className="inter-base-semibold mb-base">
           {t("shipping-option-form-details", "Details")}
         </h3>
